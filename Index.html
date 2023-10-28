@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/aside.css">
     <title>Document</title>
 </head>
 <body class="grid-conteiner">
@@ -11,7 +12,46 @@
 
         <nav class="navbar">NAVBAR</nav>
     </header>
+    
     <main class="main">MAIN</main>
+    
+    <!--Sección Julia-->
+    <aside class="aside">
+        <h1>Nuestros servicios</h1>
+        <section class="gridConteiner" id="gridConteiner" >
+            <div class="recuadros1" id="recuadros1">
+                <div class="item" id="item">
+                    <p class="descripcion" id="descripcion"> Papa nóel</p>
+                </div>    
+            </div> 
+            <div class="recuadros2" id="recuadros2" >
+                <div class="item" onclick="cargar(this)">
+                    <p class="descripcion" id> Cartas para nóel </p>
+                </div>    
+            </div>
+            <div class="recuadros3" id="recuadros3" >
+                <div class="item" onclick="cargar(this)">
+                    <p class="descripcion">Decoración navideña </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO  -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="https://i.pinimg.com/originals/3d/d4/47/3dd447defd2b2d3ce18f2754f904fba2.jpg" alt="" id="img">
+                <h2 id="servicio">Puedes tener a papa noél en tu empresa, casa o negocio</h2>
+                <p id="descripcion">Show Musical con los Personajes de la Navidad, Música, baile y Diversión…<p>Que mejor que divertirse en compañía de Papá Noél Santa Claus, Reno, Muñeco de Nieve, Duendes y otros personajes <p>Fiesta Navidad Básica con sonido <p>Acompañamiento de Papá Noél para fotos o Promoción <p>Deoración Navidad
+                    Fiesta Todo Incluido (Show, Alimentos, Decoración) <p> Además: Recreación, Talleres, Títeres o Juegos, Efectos (nieve, burbujas, humo, confeti, venturi o Piropack)
+                    Montaje Básico o tipo pasarela… Tu decides…</p>
+            </div>
+        </div>
+
+            <script src="javascript/aside.js"> </script>
+    </aside>
     <footer class="footer">FOOTER</footer>
 </body>
 </html>

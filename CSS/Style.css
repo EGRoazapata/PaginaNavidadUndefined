@@ -15,7 +15,7 @@ body {
 
 .grid-conteiner > * {
     box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
-    border-radius: 4px;
+    border-radius: 10px;
     padding: 10px;
     text-align: center;
 }
@@ -30,6 +30,11 @@ body {
     background-color: rgb(118, 226, 204);
 }
 
+.aside {
+    grid-area: aside;
+    /* background-color: #e392e7; */
+}
+
 .footer {
     grid-area: footer;
     background-color: rgb(129, 118, 226);
@@ -37,20 +42,40 @@ body {
 
 .grid-conteiner {
     display: grid;
-    gap: 0px;
-    grid-template-areas: 
+    grid-template: 
     "header"
     "main"
+    "aside"
     "footer";
 }
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
     .grid-conteiner {
         grid-template: 
         "header     header"     100px
         "main       main"       auto
+        "aside      aside"      100px
         "footer     footer"     100px/
-        200px  
+        auto  
         ;
     }
 }
+
+@media (min-width: 900px) {
+    .grid-conteiner {
+        grid-template: 
+        "header     header  header"     100px
+        "main       main    main"       auto
+        "aside      aside   aside"      100px
+        "footer     footer  footer"     100px/
+        auto  
+        ;
+    }
+} */
+
+
+
+
+
+
+
