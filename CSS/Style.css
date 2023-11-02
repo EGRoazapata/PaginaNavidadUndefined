@@ -40,25 +40,34 @@ body {
     background-color: rgb(129, 118, 226);
 }
 
-.grid-conteiner {
+@media (min-width: 300px) {
+    .grid-conteiner {
     display: grid;
     grid-template: 
-    "header"
-    "main"
-    "aside"
-    "footer";
+    "header"    30px
+    "main"      30px
+    "aside"     30px
+    "footer"    30px;
+}
 }
 
-/* @media (min-width: 600px) {
+@media (min-width: 600px) {
     .grid-conteiner {
         grid-template: 
-        "header     header"     100px
+        "header     header"     50px
         "main       main"       auto
-        "aside      aside"      100px
-        "footer     footer"     100px/
+        "aside      aside"      50px
+        "footer     footer"     50px/
         auto  
         ;
     }
+    .recuadros1 {
+        /* grid-area: recuadros1; */
+        background-image: url(https://i.pinimg.com/originals/3d/d4/47/3dd447defd2b2d3ce18f2754f904fba2.jpg);
+        background-size: cover;
+        width: 100px;
+        height: auto;
+}
 }
 
 @media (min-width: 900px) {
@@ -71,7 +80,7 @@ body {
         auto  
         ;
     }
-} */
+}
 
 
 
